@@ -1,0 +1,13 @@
+@use "./variables.scss";
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-align: center;
+}
+
+.logo--nav-closed {
+  display: none;
+}

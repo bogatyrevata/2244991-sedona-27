@@ -1,0 +1,57 @@
+@use "./variables.scss";
+
+.find-hotel {
+  display: flex;
+  text-align: center;
+  padding: 42px 18px 65px;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 84px;
+  }
+}
+
+.find-hotel__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    width: 460px;
+  }
+}
+
+.find-hotel__button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  padding: 16px 49px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 15px 137px 18px;
+  }
+}
+
+.find-hotel__button-text {
+  &:active {
+    opacity: 0.3;
+  }
+}
